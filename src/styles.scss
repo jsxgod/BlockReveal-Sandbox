@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+
+.test-block {
+  width: 200px;
+  height: 200px;
+  background-color: inherit;
+  color: black;
+  font-size: 4rem;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.block-reveal-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: fit-content;
+  .block-reveal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  .curtain {
+    opacity: 0;
+    &.reveal {
+      opacity: 100;
+    }
+  }
+}
